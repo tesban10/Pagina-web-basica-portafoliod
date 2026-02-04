@@ -1,0 +1,171 @@
+:root {
+    --primary-color: #25ac8a;
+    --secondary-color: #e7eeed;
+    --background-color: #000c0b;
+    --text-color: rgb(221, 236, 234);
+    --container-bg-color: rgb(1, 20, 11);
+    --white: #f0e9f0;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+h1 {
+    font-family: "Playwrite NZ Basic", cursive;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+header p {
+    background-color: rgba(4, 1, 28, 0.212);
+    padding: 8px;
+    border-radius: 1rem;
+    color: white
+}
+
+.hero {
+  background-image: url("acerca-demi.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 80px 40px;
+  border-radius: 20px;
+}
+header h1, header h2 {
+    background-color: #00000075;
+    padding: 10px;
+    border-radius: 1.2rem;
+}
+
+ul p {
+    background-color: rgba(7, 63, 49, 0.212);
+    padding: 6px;
+    border-radius: 0.8rem;
+    color: white;
+    max-width: 80%;
+}
+
+.contenedor {
+    width: 100%;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.3rem;
+    padding: 2rem 1rem;
+    background-color: #053527;
+    box-shadow: 0 4px 12px #053527;
+    color: #36d4bf;
+    max-width: 800px;
+}
+
+.contenedor ul, .contenedor ol {
+    max-width: 80%;
+}
+
+.contenedor p {
+    max-width: 80%;
+    
+}
+
+.contenedor h2 {
+    color: #fff;
+}
+
+.contener-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+header {
+    background-color: #e6ccff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-image: url('/assets/portada.png');
+    background-size: cover;
+    background-position: center;
+}
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: var(--container-bg-color);
+}
+footer {
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0px;
+    margin: 0;
+}
+
+footer h2 {
+    margin: 0;
+    font-size: 1.9rem;
+    color: var(--container-bg-color);
+}
+
+footer span {
+    font-weight: 600;
+    color: var(--container-bg-color);
+}
+
+@media screen and (max-width: 712px) {
+    .contener-imagenes {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    body {
+        padding: 0;
+    }
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+    
+}
